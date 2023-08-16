@@ -1,0 +1,6 @@
+framework module Pods_RENTAM_RENTAMUITests {
+  umbrella header "Pods-RENTAM-RENTAMUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

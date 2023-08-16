@@ -1,0 +1,782 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13D7F9132A85F27800DF79A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13D7F9122A85F27800DF79A1 /* Main.storyboard */; };
+		45B8AE1BB779500EB1A0BE9C /* Pods_RENTAM_RENTAMUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B74120607064F5F523AC3BA /* Pods_RENTAM_RENTAMUITests.framework */; };
+		90C6A43BB94921DBE629D70D /* Pods_RENTAM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94859AF7227EBC32E7513047 /* Pods_RENTAM.framework */; };
+		DEBE95BA26DE6D4900B6DEBC /* token.txt in Resources */ = {isa = PBXBuildFile; fileRef = DEBE95B926DE6D4900B6DEBC /* token.txt */; };
+		DED7FAB52678BF1E001CE8CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED7FAB42678BF1E001CE8CD /* AppDelegate.swift */; };
+		DED7FAB72678BF1E001CE8CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED7FAB62678BF1E001CE8CD /* SceneDelegate.swift */; };
+		DED7FAB92678BF1E001CE8CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED7FAB82678BF1E001CE8CD /* ViewController.swift */; };
+		DED7FABE2678BF24001CE8CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DED7FABD2678BF24001CE8CD /* Assets.xcassets */; };
+		DED7FAC12678BF24001CE8CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DED7FABF2678BF24001CE8CD /* LaunchScreen.storyboard */; };
+		E2754EE32A4B3E2D003BCE3F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2754EE22A4B3E2D003BCE3F /* GoogleService-Info.plist */; };
+		F0CE53C864DFA3BDDAF7F363 /* Pods_RENTAMTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F639696153DD409080A8B1A2 /* Pods_RENTAMTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DED7FAC82678BF24001CE8CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DED7FAA92678BF1D001CE8CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DED7FAB02678BF1E001CE8CD;
+			remoteInfo = Unity2017;
+		};
+		DED7FAD32678BF24001CE8CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DED7FAA92678BF1D001CE8CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DED7FAB02678BF1E001CE8CD;
+			remoteInfo = Unity2017;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02C98F9D007BD3EBEB8A2283 /* Pods-RENTAM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RENTAM.debug.xcconfig"; path = "Target Support Files/Pods-RENTAM/Pods-RENTAM.debug.xcconfig"; sourceTree = "<group>"; };
+		05901E175A9FF368D8D48A25 /* Pods-RENTAMTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RENTAMTests.release.xcconfig"; path = "Target Support Files/Pods-RENTAMTests/Pods-RENTAMTests.release.xcconfig"; sourceTree = "<group>"; };
+		13D7F9122A85F27800DF79A1 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		1D7931EB320964707ABC6341 /* Pods-RENTAM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RENTAM.release.xcconfig"; path = "Target Support Files/Pods-RENTAM/Pods-RENTAM.release.xcconfig"; sourceTree = "<group>"; };
+		5B74120607064F5F523AC3BA /* Pods_RENTAM_RENTAMUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RENTAM_RENTAMUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E4BBD3B5BAE42B304BD1CA2 /* Pods-RENTAMTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RENTAMTests.debug.xcconfig"; path = "Target Support Files/Pods-RENTAMTests/Pods-RENTAMTests.debug.xcconfig"; sourceTree = "<group>"; };
+		94859AF7227EBC32E7513047 /* Pods_RENTAM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RENTAM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FA91DCC478F8361A8CA4B86 /* Pods-RENTAM-RENTAMUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RENTAM-RENTAMUITests.debug.xcconfig"; path = "Target Support Files/Pods-RENTAM-RENTAMUITests/Pods-RENTAM-RENTAMUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DEBE95B926DE6D4900B6DEBC /* token.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = token.txt; sourceTree = "<group>"; };
+		DED7FAB12678BF1E001CE8CD /* RENTAM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RENTAM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DED7FAB42678BF1E001CE8CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DED7FAB62678BF1E001CE8CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DED7FAB82678BF1E001CE8CD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DED7FABD2678BF24001CE8CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DED7FAC02678BF24001CE8CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DED7FAC22678BF24001CE8CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DED7FAC72678BF24001CE8CD /* RENTAMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RENTAMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DED7FAD22678BF24001CE8CD /* RENTAMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RENTAMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2754EE22A4B3E2D003BCE3F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E2754EE42A4DD458003BCE3F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E2754EE62A4DD6E3003BCE3F /* firebase-ios-sdk-master.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; name = "firebase-ios-sdk-master.zip"; path = "../../Downloads/firebase-ios-sdk-master.zip"; sourceTree = "<group>"; };
+		E2754EE82A4DD712003BCE3F /* firebase-ios-sdk-master */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "firebase-ios-sdk-master"; path = "../../Downloads/firebase-ios-sdk-master"; sourceTree = "<group>"; };
+		E2754EEA2A4DD81A003BCE3F /* FirebaseMessaging */ = {isa = PBXFileReference; lastKnownFileType = folder; name = FirebaseMessaging; path = "../../Downloads/firebase-ios-sdk-master/FirebaseMessaging"; sourceTree = "<group>"; };
+		E2754EEC2A4DD842003BCE3F /* FirebaseAnalyticsSwift */ = {isa = PBXFileReference; lastKnownFileType = folder; name = FirebaseAnalyticsSwift; path = "../../Downloads/firebase-ios-sdk-master/FirebaseAnalyticsSwift"; sourceTree = "<group>"; };
+		E2754EEE2A4DDD1B003BCE3F /* RENTAM.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RENTAM.entitlements; sourceTree = "<group>"; };
+		F639696153DD409080A8B1A2 /* Pods_RENTAMTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RENTAMTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F80A2B6983FEC3EE46E119F4 /* Pods-RENTAM-RENTAMUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RENTAM-RENTAMUITests.release.xcconfig"; path = "Target Support Files/Pods-RENTAM-RENTAMUITests/Pods-RENTAM-RENTAMUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DED7FAAE2678BF1E001CE8CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90C6A43BB94921DBE629D70D /* Pods_RENTAM.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DED7FAC42678BF24001CE8CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0CE53C864DFA3BDDAF7F363 /* Pods_RENTAMTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DED7FACF2678BF24001CE8CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45B8AE1BB779500EB1A0BE9C /* Pods_RENTAM_RENTAMUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		308458AB000BAD4B8A7FDEC2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				02C98F9D007BD3EBEB8A2283 /* Pods-RENTAM.debug.xcconfig */,
+				1D7931EB320964707ABC6341 /* Pods-RENTAM.release.xcconfig */,
+				9FA91DCC478F8361A8CA4B86 /* Pods-RENTAM-RENTAMUITests.debug.xcconfig */,
+				F80A2B6983FEC3EE46E119F4 /* Pods-RENTAM-RENTAMUITests.release.xcconfig */,
+				7E4BBD3B5BAE42B304BD1CA2 /* Pods-RENTAMTests.debug.xcconfig */,
+				05901E175A9FF368D8D48A25 /* Pods-RENTAMTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		52F398516F28C19ED459A6FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2754EEC2A4DD842003BCE3F /* FirebaseAnalyticsSwift */,
+				E2754EEA2A4DD81A003BCE3F /* FirebaseMessaging */,
+				E2754EE82A4DD712003BCE3F /* firebase-ios-sdk-master */,
+				E2754EE62A4DD6E3003BCE3F /* firebase-ios-sdk-master.zip */,
+				94859AF7227EBC32E7513047 /* Pods_RENTAM.framework */,
+				5B74120607064F5F523AC3BA /* Pods_RENTAM_RENTAMUITests.framework */,
+				F639696153DD409080A8B1A2 /* Pods_RENTAMTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DED7FAA82678BF1D001CE8CD = {
+			isa = PBXGroup;
+			children = (
+				DED7FAB32678BF1E001CE8CD /* RENTAM */,
+				DED7FAB22678BF1E001CE8CD /* Products */,
+				308458AB000BAD4B8A7FDEC2 /* Pods */,
+				52F398516F28C19ED459A6FD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DED7FAB22678BF1E001CE8CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DED7FAB12678BF1E001CE8CD /* RENTAM.app */,
+				DED7FAC72678BF24001CE8CD /* RENTAMTests.xctest */,
+				DED7FAD22678BF24001CE8CD /* RENTAMUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DED7FAB32678BF1E001CE8CD /* RENTAM */ = {
+			isa = PBXGroup;
+			children = (
+				E2754EE22A4B3E2D003BCE3F /* GoogleService-Info.plist */,
+				13D7F9122A85F27800DF79A1 /* Main.storyboard */,
+				E2754EEE2A4DDD1B003BCE3F /* RENTAM.entitlements */,
+				DED7FAB42678BF1E001CE8CD /* AppDelegate.swift */,
+				DED7FAB62678BF1E001CE8CD /* SceneDelegate.swift */,
+				DED7FAB82678BF1E001CE8CD /* ViewController.swift */,
+				DED7FABD2678BF24001CE8CD /* Assets.xcassets */,
+				DED7FABF2678BF24001CE8CD /* LaunchScreen.storyboard */,
+				DED7FAC22678BF24001CE8CD /* Info.plist */,
+				E2754EE42A4DD458003BCE3F /* GoogleService-Info.plist */,
+				DEBE95B926DE6D4900B6DEBC /* token.txt */,
+			);
+			path = RENTAM;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DED7FAB02678BF1E001CE8CD /* RENTAM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DED7FADB2678BF24001CE8CD /* Build configuration list for PBXNativeTarget "RENTAM" */;
+			buildPhases = (
+				D818BF0924ED303D38C69D1E /* [CP] Check Pods Manifest.lock */,
+				DED7FAAD2678BF1E001CE8CD /* Sources */,
+				DED7FAAE2678BF1E001CE8CD /* Frameworks */,
+				DED7FAAF2678BF1E001CE8CD /* Resources */,
+				B22FAE61912E42EC50D6CFAE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RENTAM;
+			productName = Unity2017;
+			productReference = DED7FAB12678BF1E001CE8CD /* RENTAM.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DED7FAC62678BF24001CE8CD /* RENTAMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DED7FADE2678BF24001CE8CD /* Build configuration list for PBXNativeTarget "RENTAMTests" */;
+			buildPhases = (
+				44DA8798740ED5D30A3E6441 /* [CP] Check Pods Manifest.lock */,
+				DED7FAC32678BF24001CE8CD /* Sources */,
+				DED7FAC42678BF24001CE8CD /* Frameworks */,
+				DED7FAC52678BF24001CE8CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DED7FAC92678BF24001CE8CD /* PBXTargetDependency */,
+			);
+			name = RENTAMTests;
+			productName = Unity2017Tests;
+			productReference = DED7FAC72678BF24001CE8CD /* RENTAMTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DED7FAD12678BF24001CE8CD /* RENTAMUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DED7FAE12678BF24001CE8CD /* Build configuration list for PBXNativeTarget "RENTAMUITests" */;
+			buildPhases = (
+				CF7402FFBB5FC3823CF2A10C /* [CP] Check Pods Manifest.lock */,
+				DED7FACE2678BF24001CE8CD /* Sources */,
+				DED7FACF2678BF24001CE8CD /* Frameworks */,
+				DED7FAD02678BF24001CE8CD /* Resources */,
+				01050A0280035F76832C2D5E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DED7FAD42678BF24001CE8CD /* PBXTargetDependency */,
+			);
+			name = RENTAMUITests;
+			productName = Unity2017UITests;
+			productReference = DED7FAD22678BF24001CE8CD /* RENTAMUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DED7FAA92678BF1D001CE8CD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					DED7FAB02678BF1E001CE8CD = {
+						CreatedOnToolsVersion = 12.4;
+						ProvisioningStyle = Automatic;
+					};
+					DED7FAC62678BF24001CE8CD = {
+						CreatedOnToolsVersion = 12.4;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DED7FAB02678BF1E001CE8CD;
+					};
+					DED7FAD12678BF24001CE8CD = {
+						CreatedOnToolsVersion = 12.4;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DED7FAB02678BF1E001CE8CD;
+					};
+				};
+			};
+			buildConfigurationList = DED7FAAC2678BF1D001CE8CD /* Build configuration list for PBXProject "RENTAM" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DED7FAA82678BF1D001CE8CD;
+			productRefGroup = DED7FAB22678BF1E001CE8CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DED7FAB02678BF1E001CE8CD /* RENTAM */,
+				DED7FAC62678BF24001CE8CD /* RENTAMTests */,
+				DED7FAD12678BF24001CE8CD /* RENTAMUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DED7FAAF2678BF1E001CE8CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DED7FAC12678BF24001CE8CD /* LaunchScreen.storyboard in Resources */,
+				13D7F9132A85F27800DF79A1 /* Main.storyboard in Resources */,
+				DED7FABE2678BF24001CE8CD /* Assets.xcassets in Resources */,
+				E2754EE32A4B3E2D003BCE3F /* GoogleService-Info.plist in Resources */,
+				DEBE95BA26DE6D4900B6DEBC /* token.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DED7FAC52678BF24001CE8CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DED7FAD02678BF24001CE8CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01050A0280035F76832C2D5E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RENTAM-RENTAMUITests/Pods-RENTAM-RENTAMUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AppAuth/AppAuth.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseCore/FirebaseCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseCoreDiagnostics/FirebaseCoreDiagnostics.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseInstallations/FirebaseInstallations.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseMessaging/FirebaseMessaging.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMAppAuth/GTMAppAuth.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleDataTransport/GoogleDataTransport.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleSignIn/GoogleSignIn.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleSignInSwiftSupport/GoogleSignInSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppAuth.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseCoreDiagnostics.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseInstallations.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseMessaging.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMAppAuth.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleDataTransport.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleSignIn.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleSignInSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RENTAM-RENTAMUITests/Pods-RENTAM-RENTAMUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		44DA8798740ED5D30A3E6441 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RENTAMTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B22FAE61912E42EC50D6CFAE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RENTAM/Pods-RENTAM-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AppAuth/AppAuth.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseCore/FirebaseCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseCoreDiagnostics/FirebaseCoreDiagnostics.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseInstallations/FirebaseInstallations.framework",
+				"${BUILT_PRODUCTS_DIR}/FirebaseMessaging/FirebaseMessaging.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMAppAuth/GTMAppAuth.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleDataTransport/GoogleDataTransport.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleSignIn/GoogleSignIn.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleSignInSwiftSupport/GoogleSignInSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppAuth.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseCoreDiagnostics.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseInstallations.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FirebaseMessaging.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMAppAuth.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleDataTransport.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleSignIn.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleSignInSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RENTAM/Pods-RENTAM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF7402FFBB5FC3823CF2A10C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RENTAM-RENTAMUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D818BF0924ED303D38C69D1E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RENTAM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DED7FAAD2678BF1E001CE8CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DED7FAB92678BF1E001CE8CD /* ViewController.swift in Sources */,
+				DED7FAB52678BF1E001CE8CD /* AppDelegate.swift in Sources */,
+				DED7FAB72678BF1E001CE8CD /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DED7FAC32678BF24001CE8CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DED7FACE2678BF24001CE8CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DED7FAC92678BF24001CE8CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DED7FAB02678BF1E001CE8CD /* RENTAM */;
+			targetProxy = DED7FAC82678BF24001CE8CD /* PBXContainerItemProxy */;
+		};
+		DED7FAD42678BF24001CE8CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DED7FAB02678BF1E001CE8CD /* RENTAM */;
+			targetProxy = DED7FAD32678BF24001CE8CD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DED7FABF2678BF24001CE8CD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DED7FAC02678BF24001CE8CD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DED7FAD92678BF24001CE8CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DED7FADA2678BF24001CE8CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DED7FADC2678BF24001CE8CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02C98F9D007BD3EBEB8A2283 /* Pods-RENTAM.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RENTAM/RENTAM.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X78JSCGZN3;
+				INFOPLIST_FILE = "$(SRCROOT)/RENTAM/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.digitalvision.rentam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DED7FADD2678BF24001CE8CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D7931EB320964707ABC6341 /* Pods-RENTAM.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RENTAM/RENTAM.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X78JSCGZN3;
+				INFOPLIST_FILE = "$(SRCROOT)/RENTAM/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.digitalvision.rentam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DED7FADF2678BF24001CE8CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E4BBD3B5BAE42B304BD1CA2 /* Pods-RENTAMTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X78JSCGZN3;
+				INFOPLIST_FILE = Unity2017Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AppTest.Unity2017Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RENTAM.app/RENTAM";
+			};
+			name = Debug;
+		};
+		DED7FAE02678BF24001CE8CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05901E175A9FF368D8D48A25 /* Pods-RENTAMTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X78JSCGZN3;
+				INFOPLIST_FILE = Unity2017Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AppTest.Unity2017Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RENTAM.app/RENTAM";
+			};
+			name = Release;
+		};
+		DED7FAE22678BF24001CE8CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FA91DCC478F8361A8CA4B86 /* Pods-RENTAM-RENTAMUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X78JSCGZN3;
+				INFOPLIST_FILE = Unity2017UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AppTest.Unity2017UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Unity2017;
+			};
+			name = Debug;
+		};
+		DED7FAE32678BF24001CE8CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F80A2B6983FEC3EE46E119F4 /* Pods-RENTAM-RENTAMUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X78JSCGZN3;
+				INFOPLIST_FILE = Unity2017UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AppTest.Unity2017UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Unity2017;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DED7FAAC2678BF1D001CE8CD /* Build configuration list for PBXProject "RENTAM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DED7FAD92678BF24001CE8CD /* Debug */,
+				DED7FADA2678BF24001CE8CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DED7FADB2678BF24001CE8CD /* Build configuration list for PBXNativeTarget "RENTAM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DED7FADC2678BF24001CE8CD /* Debug */,
+				DED7FADD2678BF24001CE8CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DED7FADE2678BF24001CE8CD /* Build configuration list for PBXNativeTarget "RENTAMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DED7FADF2678BF24001CE8CD /* Debug */,
+				DED7FAE02678BF24001CE8CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DED7FAE12678BF24001CE8CD /* Build configuration list for PBXNativeTarget "RENTAMUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DED7FAE22678BF24001CE8CD /* Debug */,
+				DED7FAE32678BF24001CE8CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DED7FAA92678BF1D001CE8CD /* Project object */;
+}
