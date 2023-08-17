@@ -1,6 +1,7 @@
 package com.digitalvision.rentam;
 
 import android.Manifest;
+import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
 import android.app.AlertDialog;
 import android.app.DownloadManager;
@@ -49,6 +50,7 @@ import com.google.firebase.messaging.FirebaseMessaging;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -74,13 +76,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //Runtime External storage permission for saving download files
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            if (checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE)
-                    == PackageManager.PERMISSION_DENIED) {
-                Log.d("permission", "permission denied to WRITE_EXTERNAL_STORAGE - requesting it");
-                String[] permissions = {Manifest.permission.WRITE_EXTERNAL_STORAGE};
-                requestPermissions(permissions, 1);
-            }
+        if (checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE)
+                == PackageManager.PERMISSION_DENIED) {
+            Log.d("permission", "permission denied to WRITE_EXTERNAL_STORAGE - requesting it");
+            String[] permissions = {Manifest.permission.WRITE_EXTERNAL_STORAGE};
+            requestPermissions(permissions, 1);
         }
 
         progressBar = (ProgressBar) findViewById(R.id.progressBar);
@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         view.setWebChromeClient(new WebChromeClient(){
-            @TargetApi(Build.VERSION_CODES.LOLLIPOP)
+            @TargetApi(Build.VERSION_CODES.TIRAMISU)
             @Override
             public void onPermissionRequest(final PermissionRequest request) {
                 request.grant(request.getResources());
@@ -107,6 +107,7 @@ public class MainActivity extends AppCompatActivity {
 
         FirebaseMessaging.getInstance().getToken()
             .addOnCompleteListener(new OnCompleteListener<String>() {
+            @SuppressLint("SetJavaScriptEnabled")
             @Override
             public void onComplete(@NonNull Task<String> task) {
 
@@ -120,7 +121,6 @@ public class MainActivity extends AppCompatActivity {
                 String currentToken = task.getResult();
                 byte[] currentTokenHashed = Base64.encode(currentToken.getBytes(), Base64.DEFAULT);
                 Log.e("newToken mainActovoy", currentToken);;
-
                 view.getSettings().setDomStorageEnabled(true);
                 view.getSettings().setDatabaseEnabled(true);
                 view.getSettings().setMinimumFontSize(1);
@@ -128,11 +128,12 @@ public class MainActivity extends AppCompatActivity {
                 view.getSettings().setJavaScriptEnabled(true);
                 view.getSettings().setAllowFileAccess(true);
                 view.getSettings().setAllowContentAccess(true);
+                view.getSettings().setBuiltInZoomControls(false);
                 view.getSettings().setLoadWithOverviewMode(true);
                 view.getSettings().setUseWideViewPort(true);
+                view.getSettings().setUserAgentString("Mozilla/5.0 (Linux; Android 13) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.5845.92 Mobile Safari/537.36");
                 view.setWebViewClient(new MyBrowser());
                 view.loadUrl("https://staging.rentam.ba/login?token_app_login="+new String(currentTokenHashed));
-
 
                 //handle downloading
                 view.setDownloadListener(new DownloadListener()
@@ -167,7 +168,7 @@ public class MainActivity extends AppCompatActivity {
                     public void onProgressChanged(WebView view, int progress) {
                         checkPermission();
                         progressBar.setProgress(progress);
-                        progressBar.setVisibility(View.GONE);
+                        progressBar.setVisibility(view.GONE);
                         /*
                         findViewById(R.id.imageLoading1).setVisibility(View.GONE);
 
@@ -183,7 +184,7 @@ public class MainActivity extends AppCompatActivity {
                          */
                     }
 
-                    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
+                    @TargetApi(Build.VERSION_CODES.TIRAMISU)
                     @Override
                     public void onPermissionRequest(final PermissionRequest request) {
                         request.grant(request.getResources());
@@ -361,7 +362,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onPageFinished(WebView view, String url) {
             super.onPageFinished(view, url);
-            progressBar.setVisibility(view.GONE);
+            progressBar.setVisibility(View.GONE);
 
         }
         @Override
@@ -484,7 +485,7 @@ public class MainActivity extends AppCompatActivity {
         mUploadMessage = null;
     }
 
-    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
+    @TargetApi(Build.VERSION_CODES.TIRAMISU)
     private void handleUploadMessages(int requestCode, int resultCode, Intent intent) {
         Uri[] results = null;
         try {
